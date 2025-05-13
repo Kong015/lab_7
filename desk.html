@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tough Guy Custom Quote</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="jquery-3.6.0.js"></script>
+		<script src="external.js"></script>
+	</head>
+	<body>
+	<div id = "title">
+		<header>
+			<h1 id = "move">Tough Guy Carpentry</h1>
+		</header>
+		<nav>
+			<br>
+			<br>
+			<ul>
+				<li><a id="home" href="" title="Home page">HOME</a></li>
+				<li><a href="" title="Banana Page">SERVICES</a></li>
+				<li><a href="" title="Emailing Tony">CONTACT</a></li>
+				<li><a href="" title="careers at Tony's Car Wash">CAREERS</a></li>
+				<li><a href="" title="about Tony">ABOUT</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div id="container">  
+	  <div id="contact">
+		<h3>Tough Guy Carpentry</h3>
+		<h4>Contact us for a custom quote on your premium desk!</h4>
+		<fieldset>
+			<p>Length:</p>
+		  	<input placeholder="Length in inches" type="text" id= "lengths">
+		  	<div id="message-3">Length Should Not Be Inbetween 24-96</div>
+		</fieldset>
+		<fieldset>
+		 	<p>Width:</p>
+		 	<input placeholder="Width in inches" type="text" id= "widths">
+		 	<div id="message-5">The Width is Now Gone. Click Submit For it to Come Back</div>
+		 	<div id="message-4">Width Should Not Be Inbetween 24-96</div>
+		</fieldset>
+		<fieldset>
+			<p>Wood Type:</p>
+		 	<select id="select">
+				<option value=""></option>
+				<option value="Mahogany">Mahogany</option>
+				<option value="Oak">Oak</option>
+				<option value="Pine">Pine</option>
+			</select>
+		</fieldset>
+		<fieldset>
+		 	<p>Number of Drawers:</p>
+		 	<input placeholder="Number of Drawers" type="text" id="drawers">
+		</fieldset>
+		<div id="message-2"></div>
+		<fieldset>
+		  <button id="quote-submit">Submit Quote Request!</button>
+		</fieldset>
+	  </div>
+	  <fieldset>
+	    <button id="toggle">TOGGLE TABLE</button>
+	  </fieldset>
+	  <div id = "message"></div>
+	</div>
+	</body>
+</html>

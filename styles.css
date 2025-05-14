@@ -69,7 +69,7 @@ fieldset {
   width: 100%;
 }
 
-#toggle-table {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;

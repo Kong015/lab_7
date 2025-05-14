@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Kong Xiong Custom Quote</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="external.js"></script>
-	</head>
-	<body>
-	<div id = "title">
+
+<head>
+	<title>Kong Xiong Custom Quote</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="external.js"></script>
+</head>
+
+<body>
+	<div id="title">
 		<header>
-			<h1 id = "move">John Carpentry</h1>
+			<h1 id="move">John Carpentry</h1>
 		</header>
 		<nav>
 			<br>
@@ -23,44 +25,43 @@
 			</ul>
 		</nav>
 	</div>
-	
-	<div id="container">  
-	  <div id="contact">
-		<h3>John Carpentry</h3>
-		<h4>Contact us for a custom quote on your premium desk!</h4>
-		<fieldset>
-			<p>Length:</p>
-		  	<input placeholder="Length in inches" type="text" id= "lengths">
-		  	<div id="message-3">Length Should Not Be Inbetween 24-96</div>
+
+	<div id="container">
+		<div id="contact">
+			<h3>John Carpentry</h3>
+			<h4 id = "sub-title">Contact us for a custom quote on your premium desk!</h4>
+			<fieldset>
+				<p>Length:</p>
+				<input placeholder="Length in inches" type="text" id="lengths">
+				<div id="message-3">Length Should Not Be Inbetween 24-96</div>
+			</fieldset>
+			<fieldset>
+				<p>Width:</p>
+				<input placeholder="Width in inches" type="text" id="widths">
+				<div id="message-4">Width Should Not Be Inbetween 24-96</div>
+			</fieldset>
+			<fieldset>
+				<p>Wood Type:</p>
+				<select id="select">
+					<option value=""></option>
+					<option value="Mahogany">Mahogany</option>
+					<option value="Oak">Oak</option>
+					<option value="Pine">Pine</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<p>Number of Drawers:</p>
+				<input placeholder="Number of Drawers" type="text" id="drawers">
+			</fieldset>
+			<div id="message-2"></div>
+			<fieldset>
+				<button id="quote-submit">Submit Quote Request!</button>
+			</fieldset>
+		</div>
+		<div id="message"></div>
+		<fieldset id="toggle-table">
+			<button id="toggle">TOGGLE TABLE</button>
 		</fieldset>
-		<fieldset>
-		 	<p>Width:</p>
-		 	<input placeholder="Width in inches" type="text" id= "widths">
-		 	<div id="message-5">The Width is Now Gone. Click Submit For it to Come Back</div>
-		 	<div id="message-4">Width Should Not Be Inbetween 24-96</div>
-		</fieldset>
-		<fieldset>
-			<p>Wood Type:</p>
-		 	<select id="select">
-				<option value=""></option>
-				<option value="Mahogany">Mahogany</option>
-				<option value="Oak">Oak</option>
-				<option value="Pine">Pine</option>
-			</select>
-		</fieldset>
-		<fieldset>
-		 	<p>Number of Drawers:</p>
-		 	<input placeholder="Number of Drawers" type="text" id="drawers">
-		</fieldset>
-		<div id="message-2"></div>
-		<fieldset>
-		  <button id="quote-submit">Submit Quote Request!</button>
-		</fieldset>
-	  </div>
-	  <fieldset>
-	    <button id="toggle">TOGGLE TABLE</button>
-	  </fieldset>
-	  <div id = "message"></div>
 	</div>
-	</body>
+</body>
 </html>

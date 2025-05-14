@@ -9,14 +9,15 @@ var add = 0;
 var total = 0;
 var output = "";
 var animate = "";
+
 $(document).ready(function()
 {
 	$("#quote-submit").click(function()
 	{
-		length = $("#lengths").val();
-		width = $("#widths").val();
-		typeOfWood = $("#select").val();
-		drawers = $("#drawers").val();
+		length = $("#lengths").val() || 0;
+		width = $("#widths").val() || 0;
+		typeOfWood = $("#select").val() || "None";
+		drawers = $("#drawers").val() || 0;
 		squareFeet = length * width;
 		if(squareFeet > 750)
 		{
@@ -53,7 +54,7 @@ $(document).ready(function()
 		if(drawers == "" || drawers == 0)
 		{
 			drawers = 0
-			$("#message-2").html("<h4>Are You Sure You Don't Want Any drawers</h4>").fadeOut(2000) /*Fade*/
+			$("#message-2").html("<h4>Are You Sure You Don't Want Any drawers</h4>")
 		}
 		else
 		{
@@ -67,18 +68,9 @@ $(document).ready(function()
 	$("#quote-submit").click(function(event)
 	{
 		$("h4").fadeIn(1000) /*Fade*/
+		$("#sub-title").hide()
 		$("h3").html(event.result); /*jQuery event other than click*/
 		$("#widths").show() /*Show*/
-		$("p").slideToggle("slow,swing"); /*slideToggle*/
-		$("#contact").animate(
-		{
-			height: "+=15px",
-			width: "+=50px",
-		}); /*Animate with CSS*/
-		$("h3").animate(
-		{
-			height: "+=5px"
-		}); /*Animate with CSS*/
 	});
 	$("#toggle").click(function()
 	{
@@ -102,28 +94,4 @@ $(document).ready(function()
 		$("#message-4").css("display", "inline").fadeOut(3000); /*Fade*/
 		$("p").fadeIn(2000); /*Fade*/
 	});
-	$("input").keydown(function() /*jQuery event other than click*/
-	{
-		$("input").css("color", "green");
-	});
-	$("h4").mouseover(function() /*jQuery event other than click*/
-	{
-		$("h4").fadeOut(1000) /*Fade*/
-	});
-	$("p").one("click", function() /*jQuery event other than click*/
-	{
-		$(this).animate({fontSize: "+=6px"}); /*Animate with CSS*/
-	});
-	$("h3").dblclick(function() /*jQuery event other than click*/
-	{
-	 	$("h3").toggle(); /*Toggle*/
-	});
-	$("select").mouseover(function() /*jQuery event other than click*/
-	{
-		$("#widths").hide(function() /*Hide*/
-		{
-    		$("#message-5").css("display", "inline")  /*callback*/
-  		});
-	})
-	$("#title").fadeOut(0) /*Fade*/
 })
